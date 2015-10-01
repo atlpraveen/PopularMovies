@@ -1,0 +1,164 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.praveen.popularmovies.MovieDetailActivityFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/abc_action_bar_icon_vertical_padding_material">
+
+
+<LinearLayout  android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:dividerPadding="10dp"
+    android:backgroundTint="@color/highlighted_text_material_dark"
+    android:paddingBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+    android:paddingTop="@dimen/abc_action_bar_icon_vertical_padding_material">
+
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif"
+        android:textColor="#ff2a5dff"
+        android:layout_gravity="center" />
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/img_card_view"
+        app:cardUseCompatPadding="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <ImageView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="380dp" android:layout_height="250dp"
+            android:id="@+id/backdropView"
+            android:layout_weight="1"
+            android:nestedScrollingEnabled="true"
+            android:cropToPadding="false"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="10dp">
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_weight="0"
+            android:layout_gravity="center"
+            android:id="@+id/ratingBar"
+            android:numStars="5"
+            android:progressBackgroundTint="#ff8bff85"
+            android:progressTint="#ff75ff5c"
+            android:secondaryProgressTint="#ff4dff53" />
+
+            <TextView
+                android:id="@+id/userRating"
+                android:text="User Rating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#ff2a5dff"
+                android:layout_gravity="center" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/releaseDate"
+                android:text="Release Date"
+                android:contentDescription="Release Date"
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif"
+                android:textColor="#ff2a5dff"
+                android:layout_gravity="center" />
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+
+
+        </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/card_view"
+        app:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:dividerPadding="10dp"
+            android:backgroundTint="@color/highlighted_text_material_dark"
+            android:paddingBottom="@dimen/abc_action_bar_icon_vertical_padding_material"
+            android:paddingTop="@dimen/abc_action_bar_icon_vertical_padding_material">
+
+    <TextView
+        android:id="@+id/overview"
+        android:text="Overview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:textColor="#ff2a5dff"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textStyle="italic"
+        android:textSize="@dimen/abc_text_size_caption_material" />
+        </LinearLayout>
+
+</android.support.v7.widget.CardView>
+
+    <ListView
+        android:isScrollContainer="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/trailerView"
+        android:layout_gravity="center" />
+
+</LinearLayout>
+
+
+
+</ScrollView>
